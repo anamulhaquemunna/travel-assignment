@@ -20,7 +20,7 @@ footer {
 
 /* nav section start here */
 
-/* .nav {
+.nav {
     display: flex;
 
     justify-content: space-between;
@@ -47,6 +47,9 @@ footer {
 
 
 }
+.three-dot{
+    display: none;
+}
 
 .travel-name h2 {
     color: #131318;
@@ -67,9 +70,26 @@ footer {
 
 .option a {
     text-decoration: none;
-} */
+}
 
 /* nav section ends here */
+@media screen and (max-width:600px) {
+    .nav{
+        width: 90%;
+    }
+    #hide-korbo{
+        display: none;
+    }
+    .three-dot{
+        display: flex;
+        flex-direction:end;
+        margin-left: 15px;
+        width: 24px;
+height: 24px;
+
+
+    }
+}
 
 
 
@@ -435,6 +455,14 @@ footer {
 .services img{
     margin-bottom: 20px;
 }
+.service h3{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 
 /* Why Choose Us section ends here  */
@@ -488,6 +516,7 @@ align-items: center;
 align-items: center;
 margin: 5px auto;
     }
+   
     
 
 
@@ -619,7 +648,7 @@ margin: 5px auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .inside-footer {
@@ -747,6 +776,7 @@ background: url(Images/Rectangle\ 8\(1\).png), lightgray 50% / cover no-repeat;
 
 .newsletter-input h3{
 font-size: 1.5rem;
+
 font-weight: 800;
 }
 .newsletter-input p{
