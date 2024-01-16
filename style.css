@@ -93,9 +93,7 @@ footer {
 
 
     }
-    .travel-name{
-        width: 50%;
-    }
+    
 }
 
 /* responsive nav ends */
@@ -918,7 +916,6 @@ span {
 
 .pay-chobi img {
     width: 25%;
-    padding: 50px auto;
 
 }
 
