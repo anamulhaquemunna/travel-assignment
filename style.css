@@ -82,7 +82,7 @@ footer {
     }
     .three-dot{
         display: flex;
-        flex-direction:end;
+        flex-direction:center;
         margin-left: 15px;
         width: 24px;
 height: 24px;
