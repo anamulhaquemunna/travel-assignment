@@ -718,6 +718,7 @@ span {
 .newsletter {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 
 }
 
@@ -834,6 +835,7 @@ span {
         width: 100%;
 
     }
+   
 }
 
 
@@ -845,7 +847,6 @@ span {
 .bonus {
     margin-top: 4rem;
     width: 81.25%;
-    height: 350px;
     margin: 50px auto;
     background-color: ;
     border-radius: 16px;
