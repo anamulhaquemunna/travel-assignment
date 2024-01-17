@@ -9,7 +9,7 @@ header {
     margin: 20px auto;
     width: 81.25%;
 
-    max-width: 1170px;
+    
 
 }
 
@@ -17,10 +17,16 @@ footer {
     width: 100%;
 
 }
+main{
+    width: 81.25%;
+    margin: 0px auto;
+}
 
 /* nav section start here */
 
 .nav {
+    width: 81.25%;
+    margin: 50px auto;
     display: flex;
 
     justify-content: space-between;
@@ -29,12 +35,13 @@ footer {
 
 .travel-name {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .option {
-    gap: 44px;
+    gap: 2.5rem;
     display: flex;
+   
     justify-content: space-evenly;
     color: var(--Dark-02, #424247);
     text-align: center;
@@ -83,15 +90,25 @@ footer {
     #hide-korbo {
         display: none;
     }
+    .travel-name h2 {
+        
+    
+        
+        font-size: 1.5rem;
+        
+    }
 
     .three-dot {
         display: flex;
         flex-direction: center;
-        margin-left: 15px;
+        /* margin-left: 15px; */
         width: 24px;
         height: 24px;
 
 
+    }
+    .travel-name{
+        width: 20%;
     }
     
 }
@@ -102,12 +119,13 @@ footer {
 /* banner section start here  */
 
 .banner-section {
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/first-background.png);
-    background-position: center;
-    max-width: 1170px;
-
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/first-background.png');
+    width: 81.25%;
     height: 500px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 50px auto;
 
 }
@@ -137,7 +155,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.text p {
+#banner-pera {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
@@ -148,7 +166,7 @@ footer {
 
 }
 
-.button {
+#banner-button {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     display: flex;
@@ -156,7 +174,8 @@ footer {
     align-items: center;
     gap: 24px;
     padding: 16px;
-    gap: 24px;
+
+    
 }
 
 #place,
@@ -190,17 +209,50 @@ footer {
 
 /* banner section ends here */
 
+
+/* responsive part banner section  start*/
+@media screen and (max-width:600px) {
+
+    .button {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        width: 90%;
+        height: auto;
+
+    }
+
+    .text h1 {
+        font-size: 1rem;
+    }
+
+    .text p {
+
+        font-size: .5rem;
+      
+    }
+
+    .text h1 {
+        margin-bottom: 0.5rem;
+    }
+
+
+}
+
+/* banner section responsive part end */
+
 /*  Our Popular Tours start here */
 .Popular-section {
     margin-top: 4rem;
-    width: 73.125rem;
-    height: 550px;
+    width: 81.25%;
+
     margin: 50px auto;
 }
 
 .only-text,
 .only-image {
-    width: 100%;
+    width: 81.25%;
 }
 
 
@@ -266,11 +318,44 @@ footer {
 
 /* Our Popular Tours ends here */
 
+/* responsive Our Popular Tours start here */
+@media screen and (max-width:600px) {
+    .Popular-section {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-and-button-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .only-image {
+        margin-top: 1.5rem;
+        width: 100%;
+
+    }
+
+    .only-text p {
+        font-size: 0.875rem;
+    }
+
+    .only-text h2 {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/* responsive Our Popular Tours ends here */
+
+
 
 /* chose your destination starts here */
 .your-destination {
     margin-top: 8rem;
-    width: 73.125rem;
+    width: 81.25%;
 
     margin: 50px auto;
 }
@@ -358,200 +443,6 @@ footer {
 
 /* chose your destination ends here */
 
-
-
-/* Why Choose Us section start here */
-
-
-
-.why-chose {
-    margin-top: 4rem;
-    width: 73.125rem;
-
-    margin: 50px auto;
-}
-
-.text h2 {
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 40px;
-
-    font-weight: 800;
-
-
-}
-
-.text p {
-    width: 40rem;
-}
-
-.text {
-    margin: auto;
-}
-
-.why-chose h2 {
-    color: #131318;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-
-.why-chose p {
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 24px;
-    margin-bottom: 48px;
-}
-
-.first-service,
-.second-service,
-.second-last {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-
-
-}
-
-.first-two {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: space-between;
-
-
-}
-
-.services {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    gap: 24px;
-}
-
-.first-service {
-    width: 48%;
-    border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05);
-    border: none;
-    padding: 2rem;
-}
-
-.second-service {
-    padding: 2rem;
-    width: 48%;
-    border-radius: 16px;
-    border: 1px solid rgba(41, 206, 246, 0.20);
-    background: rgba(41, 206, 246, 0.05);
-    border: none;
-}
-
-.second-last {
-    padding: 2rem;
-    width: 48%;
-    margin-top: 24px;
-    border-radius: 16px;
-    border: 1px solid rgba(233, 68, 68, 0.20);
-    background: rgba(233, 68, 68, 0.05);
-    border: none;
-}
-
-.services p {
-    text-align: start;
-}
-
-.services img {
-    margin-bottom: 20px;
-}
-
-.service h3 {
-    color: #131318;
-    font-family: Mulish;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-
-/* Why Choose Us section ends here  */
-
-
-
-
-/* responsive Why Choose Us section start here */
-@media screen and (max-width:600px) {
-    .why-chose {
-        width: 90%;
-    }
-
-    .first-two {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .services {
-
-        display: grid;
-        grid-template-rows: auto;
-
-    }
-
-    .first-service,
-    .second-service {
-        width: auto;
-    }
-
-    .second-last {
-        width: 85%;
-        margin: auto;
-    }
-
-    .why-chose h2 {
-        color: #131318;
-        text-align: center;
-        font-family: Mulish;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-    }
-
-    .why-chose p {
-        width: 309px;
-        margin: 0px;
-    }
-
-    .why-chose h2,
-    p {
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    #majhamajhi {
-        align-items: center;
-        margin: 5px auto;
-    }
-
-
-
-
-}
-
-/* responsive Why Choose Us section ends here  */
-
-
-
-
-
 /* responsive chose your destination start here */
 
 @media screen and (max-width:600px) {
@@ -592,74 +483,122 @@ footer {
 
 
 
+/* Why Choose Us section start here */
 
 
-/* responsive part banner section  start*/
-@media screen and (max-width:600px) {
 
-    .button {
-        flex-direction: column;
-    }
+.why-chose {
+    margin-top: 4rem;
+     width: 81.25%;
+    margin: 80px auto;
+}
+.choose-container {
 
-    .banner-section {
-        width: 90%;
-        height: auto;
-
-    }
-
-    .text h1 {
-        font-size: 1.375rem;
-    }
-
-    .text p {
-
-        font-size: 14px;
-        margin-bottom: 2rem;
-    }
-
-    .text h1 {
-        margin-bottom: 0.5rem;
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-/* banner section responsive part end */
+.text h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+
+    font-weight: 800;
+  margin-bottom: 20px;
+
+}
+
+.text p {
+     color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.text {
+  width: 48%;
+}
+.why-chose .services{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.first-service{
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+
+.second-service{
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+     border: 1px solid rgba(41, 206, 246, 0.20);
+     background: rgba(41, 206, 246, 0.05); 
+}
+.second-last{
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
 
 
 
 
-/* responsive Our Popular Tours start here */
+.first-service p, .second-service p, .second-last p {
+    text-align: start;
+}
+
+
+
+
+
+/* Why Choose Us section ends here  */
+
+
+
+
+/* responsive Why Choose Us section start here */
 @media screen and (max-width:600px) {
-    .Popular-section {
-        width: 90%;
-        height: auto;
-    }
+    
 
-    .text-and-button-image {
+    .services {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .only-image {
-        margin-top: 1.5rem;
-        width: 100%;
 
     }
 
-    .only-text p {
-        font-size: 0.875rem;
-    }
+   .first-service, .second-service, .second-last{
+    width: 90%;
+   }
 
-    .only-text h2 {
-        font-size: 1.25rem;
-    }
+   .text h2{
+    font-size: 1.5rem;
+
+   }
+   .text p {
+    font-size: .8rem;
+   }
 
 }
 
+    
 
-/* responsive Our Popular Tours ends here */
+
+/* responsive Why Choose Us section ends here  */
+
 
 
 
@@ -758,7 +697,7 @@ span {
 
 .newsletter-discount {
     margin-top: 4rem;
-    width: 73.125rem;
+    width: 81.25%;
 
     margin: 50px auto;
 }
@@ -892,7 +831,7 @@ span {
 
 .bonus {
     margin-top: 4rem;
-    width: 73.125rem;
+    width: 81.25%;
     height: 350px;
     margin: 50px auto;
     background-color: ;
